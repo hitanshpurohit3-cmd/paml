@@ -1,0 +1,46 @@
+#config.yaml - Central configuration for the entire pipeline
+#All paths, seeds and hypereparameters live here.
+#Importr in every src/file with: import yaml; cfg = yam.safe_load("config.yaml")
+
+random_seed: 42 # set everywhere: numpy, sklearn, xgboost, torch
+pcgita_available: false # Set to true only if PC-GITA access is granted
+
+paths:
+raw: data/raw
+processed: data/processed
+audio: data/audio
+models: models/
+figures: figures/
+reports: figures/
+reports: reports/
+files:
+oxford: data/raw/parkinsons.csv
+tele: data/raw/parkinsons_updrs.csv
+replicated: data/raw/pd_speech_features.csv
+istanbul: data/raw/pd_istanbul.csv
+pcgita_dir: data/audio/pcgita/
+
+features:
+shared_8:
+- "MDVP:Fo(Hz)"
+- "MDVP:Jitter(%)"
+- "MDVP:Shimmer"
+- NHR
+- HNR
+- RPDE
+- DFA
+- PPE
+
+smote:
+k_neighbors: 5
+monte_carlo:
+n_iterations: 500
+test_size: 0.20
+
+sack:
+n_base_classifier: 4
+feature_fraction: 0.80
+
+
+optuna:
+n_trials: 100
