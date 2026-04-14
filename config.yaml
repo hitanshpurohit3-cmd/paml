@@ -14,10 +14,10 @@ figures: figures/
 reports: figures/
 reports: reports/
 files:
-oxford: data/raw/parkinsons.csv
-tele: data/raw/parkinsons_updrs.csv
-replicated: data/raw/pd_speech_features.csv
-istanbul: data/raw/pd_istanbul.csv
+oxford: data/raw/dataset1/parkinsons.data
+tele: data/raw/dataset2/parkinsons_updrs.data
+replicated: data/raw/dataset3/ReplicatedAcousticFeatures-ParkinsonDatabase.csv
+istanbul: data/raw/dataset4/test_data.txt
 pcgita_dir: data/audio/pcgita/
 
 features:
