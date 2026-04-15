@@ -226,7 +226,7 @@ This project demonstrates how machine learning can effectively detect Parkinson�
 
 👨‍💻 Author
 
-Your Name
+Hitansh Purohit
 
 ---
 
